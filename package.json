@@ -1,7 +1,7 @@
 {
-  "name": "budget-app",
+  "name": "basic-budget-offline",
   "version": "1.0.0",
-  "description": "",
+  "description": "A budget tracking app built to use offline transaction storage with IndexedDB.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
+    "url": "git+https://github.com/ziieng/BasicBudgetOffline.git"
   },
-  "author": "",
+  "author": "Christina Zii Engelhardt",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coding-boot-camp/unit18hw/issues"
+    "url": "https://github.com/ziieng/BasicBudgetOffline/issues"
   },
-  "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
+  "homepage": "https://github.com/ziieng/BasicBudgetOffline",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
