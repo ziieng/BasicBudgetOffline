@@ -6,7 +6,6 @@ The live app is [available on Heroku](https://mysterious-thicket-53034.herokuapp
 
 ## Table of Contents
 * [Description](#Description)
-  * [Challenges](#Challenges)
   * [Further Possibilities](#Further-Possibilities)
   * [Built With](#built-with)
 * [Installation](#Installation)
@@ -16,17 +15,16 @@ The live app is [available on Heroku](https://mysterious-thicket-53034.herokuapp
 * [Questions](#Questions)
 
 ## Description
-A budget tracking app built to use offline transaction tracking with IndexedDB.
+A budget tracking app built to use offline transaction tracking with IndexedDB. For this assignment, we were provided the front-end for the application and tasked with building the offline functionality for it.
 
 [![Project Screenshot](./OfflineBudget.gif)](https://mysterious-thicket-53034.herokuapp.com/)
 
-
-
-### Challenges
-
+By using the built-in IndexedDB functionality of the browser, I set up a service worker that listened for the app's API calls and stored any that weren't successfully received. Once the service worker receives notification that the app is back online, it pulls all transactions stored in the IndexedDB and sends them up to the server.
 
 ### Further Possibilities
+The front-end application is a simple one, and only supports a single budget account. It could be expanded to include budgets for multiple categories in addition to the total cash balance. It could also be useful to add transaction editing for anything mis-typed by the user, and possibly a comment field to provide more details.
 
+If this application were going to be used by more than one person, some sort of authentication or user management would also need to be added so their transactions didn't get mixed together.
 
 ### Built With
 
